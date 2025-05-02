@@ -1,4 +1,7 @@
+using ETicaretAPI.Application.Validators;
 using ETicaretAPI.Persistence;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace ETicaretAPI.API
 {
@@ -14,6 +17,12 @@ namespace ETicaretAPI.API
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddFluentValidationAutoValidation();
+            builder.Services.AddFluentValidationClientsideAdapters();
+
+            // Burada validator-larý assembly-d?n qeydiyyatdan keçiririk
+            builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidators>();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
