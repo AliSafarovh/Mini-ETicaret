@@ -1,4 +1,5 @@
 using ETicaretAPI.Application.Validators;
+using ETicaretAPI.Infrastructure;
 using ETicaretAPI.Persistence;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -11,6 +12,7 @@ namespace ETicaretAPI.API
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddPersistenceServices(builder.Configuration);
+            builder.Services.AddInfrastructureServices();
 
             builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
             policy.WithOrigins("http://localhost:1425").AllowAnyHeader().AllowAnyMethod())); //Cors Politikasi
@@ -35,6 +37,8 @@ namespace ETicaretAPI.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseStaticFiles(); //wwwroot qovluðundaký statik fayllara (.html, .css, .js, .png, .jpg v? s.) icaze verir
 
             app.UseCors();
             app.UseHttpsRedirection();

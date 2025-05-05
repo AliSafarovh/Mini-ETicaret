@@ -316,3 +316,4 @@ C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\ob
 C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net8.0\ETicaretAPI.API.staticwebassets.runtime.json

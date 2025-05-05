@@ -1,0 +1,2 @@
+wwwroot\resource\product-images\Ekran-Goruntusu-14.png
+wwwroot\resource\product-images\Ekran-Goruntusu-4.png
