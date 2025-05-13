@@ -100,6 +100,36 @@ namespace ETicaretAPI.Persistence.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("ETicaretAPI.Domain.Entities.ProductImageFile", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductImageFile");
+                });
+
             modelBuilder.Entity("ETicaretAPI.Domain.Entities.Order", b =>
                 {
                     b.HasOne("ETicaretAPI.Domain.Entities.Customer", "Customer")
@@ -109,6 +139,22 @@ namespace ETicaretAPI.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("ETicaretAPI.Domain.Entities.ProductImageFile", b =>
+                {
+                    b.HasOne("ETicaretAPI.Domain.Entities.Product", "Product")
+                        .WithMany("ProductImageFiles")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("ETicaretAPI.Domain.Entities.Product", b =>
+                {
+                    b.Navigation("ProductImageFiles");
                 });
 #pragma warning restore 612, 618
         }

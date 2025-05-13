@@ -9,8 +9,8 @@ namespace ETicaretAPI.Application.Services
 {
     public  interface IFileService
     {
-        //metod parametr kimi string tipinde PathName ve IFormFile tipinde file qebul etmelidir
-        Task<List<(string fileName, string path)>> UploadAsync(string path, IFormFileCollection files);
-        Task<bool> CopyFileAsync(string path,IFormFile file);
+        string Upload(IFormFile formFile, string root);
+        void Delete(string filePath);
+        string Update(IFormFile formFile, string filePath, string root);
     }
 }

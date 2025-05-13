@@ -38,9 +38,9 @@ namespace ETicaretAPI.Persistence.Repositores
             return entityEntry.State == EntityState.Deleted;
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(string id)
         {
-            T model = await Table.FirstOrDefaultAsync(x => x.Id == id);
+            T model = await Table.FirstOrDefaultAsync(x => x.Id == Guid.Parse(id));
             return Delete(model);
         }
 

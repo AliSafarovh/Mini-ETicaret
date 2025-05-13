@@ -1,5 +1,5 @@
 ﻿using ETicaretAPI.Application.Services;
-using ETicaretAPI.Infrastructure.Services;
+using ETicaretAPI.Infrastructure.Utilities.Helper.FileHelper;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace ETicaretAPI.Infrastructure
     {
         public static void AddInfrastructureServices(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<IFileService,FileService>();
+            serviceCollection.AddScoped<IFileService,FileServiceHelper>();
         }
     }
 }

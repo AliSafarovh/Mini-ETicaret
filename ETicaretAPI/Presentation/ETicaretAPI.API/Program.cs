@@ -1,3 +1,4 @@
+using ETicaretAPI.Application;
 using ETicaretAPI.Application.Validators;
 using ETicaretAPI.Infrastructure;
 using ETicaretAPI.Persistence;
@@ -13,6 +14,7 @@ namespace ETicaretAPI.API
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddPersistenceServices(builder.Configuration);
             builder.Services.AddInfrastructureServices();
+            builder.Services.AddAplicationServices();
 
             builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
             policy.WithOrigins("http://localhost:1425").AllowAnyHeader().AllowAnyMethod())); //Cors Politikasi
@@ -22,7 +24,7 @@ namespace ETicaretAPI.API
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddFluentValidationClientsideAdapters();
 
-            // Burada validator-larý assembly-d?n qeydiyyatdan keçiririk
+            //Burada validator-larý assembly - d ? n qeydiyyatdan keçiririk
             builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidators>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

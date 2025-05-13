@@ -42,17 +42,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Create_Product"
+                "$ref": "#/components/schemas/CreateProductCommandRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Create_Product"
+                "$ref": "#/components/schemas/CreateProductCommandRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Create_Product"
+                "$ref": "#/components/schemas/CreateProductCommandRequest"
               }
             }
           }
@@ -71,21 +71,43 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Products/{Id}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -98,34 +120,11 @@
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Products/{id}": {
-      "get": {
-        "tags": [
-          "Products"
-        ],
-        "parameters": [
-          {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -147,7 +146,10 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "files": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Files": {
                     "type": "array",
                     "items": {
                       "type": "string",
@@ -157,9 +159,90 @@
                 }
               },
               "encoding": {
-                "files": {
+                "Id": {
+                  "style": "form"
+                },
+                "Files": {
                   "style": "form"
                 }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Products/DeleteImage": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ProductId": {
+                    "type": "string"
+                  },
+                  "FileName": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "ProductId": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Products/GetAllProductImages/{productId}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetProductImagesQueryRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetProductImagesQueryRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetProductImagesQueryRequest"
               }
             }
           }
@@ -174,7 +257,7 @@
   },
   "components": {
     "schemas": {
-      "VM_Create_Product": {
+      "CreateProductCommandRequest": {
         "type": "object",
         "properties": {
           "name": {
@@ -192,12 +275,22 @@
         },
         "additionalProperties": false
       },
-      "VM_Update_Product": {
+      "GetProductImagesQueryRequest": {
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid"
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProductCommandRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
           },
           "name": {
             "type": "string",

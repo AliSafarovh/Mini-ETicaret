@@ -29,8 +29,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "ETicaretAPI.Application.ViewModels.Product.VM_Create_Product",
+        "Name": "productCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.Product.CreateProduct.CreateProductCommandRequest",
         "IsRequired": true
       }
     ],
@@ -45,8 +45,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "ETicaretAPI.Application.ViewModels.Product.VM_Update_Product",
+        "Name": "productCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.Product.UpdateProduct.UpdateProductCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
+    "Method": "GetById",
+    "RelativePath": "api/Products/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -55,14 +71,35 @@
   {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
     "Method": "DeleteProduct",
-    "RelativePath": "api/Products",
+    "RelativePath": "api/Products/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
+    "Method": "DeleteImage",
+    "RelativePath": "api/Products/DeleteImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -70,15 +107,20 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
-    "Method": "GetById",
-    "RelativePath": "api/Products/{id}",
+    "Method": "GetAllProductImages",
+    "RelativePath": "api/Products/GetAllProductImages/{productId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "request",
+        "Type": "ETicaretAPI.Application.Features.Queries.ProductImageFile.GetProductImage.GetProductImagesQueryRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "productId",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -93,7 +135,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "files",
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Files",
         "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
         "IsRequired": false
       }
