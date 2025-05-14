@@ -1,6 +1,8 @@
 ﻿using ETicaretAPI.Application.Repositories;
+using ETicaretAPI.Application.Services.Repositories;
 using ETicaretAPI.Persistence.Contexts;
 using ETicaretAPI.Persistence.Repositores;
+using ETicaretAPI.Persistence.Repositores.ProductImageFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,20 +16,23 @@ namespace ETicaretAPI.Persistence
 {
     public static class ServiceRegistration
     {
-            public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
-            {
-                services.AddDbContext<ETicaretDbcontext>(options =>
-                   options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+        public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<ETicaretDbcontext>(options =>
+               options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-                services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
-                services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
+            services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
+            services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
 
-                services.AddScoped<IOrderReadRepository, OrderReadRepository>();
-                services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+            services.AddScoped<IOrderReadRepository, OrderReadRepository>();
+            services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
 
-                services.AddScoped<IProductReadRepository, ProductReadRepository>();
-                services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+            services.AddScoped<IProductReadRepository, ProductReadRepository>();
+            services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 
-            }
+            services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>();
+            services.AddScoped<IProductImageFileReadRepository, ProductImageFileReadRepository>();
+
+        }
     }
 }

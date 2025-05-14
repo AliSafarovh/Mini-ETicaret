@@ -1,24 +1,153 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\core\\eticaretapi.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DELL/ETicaretDb/True/SqlTable/dbo.ProductImageFile.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3C3E81-056A-4242-B84C-E304AFB49CE8}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3C3E81-056A-4242-B84C-E304AFB49CE8}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\core\\eticaretapi.application\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D803C0-11DE-4027-8EB3-DCFA22D99EE1}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\productimagefilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D803C0-11DE-4027-8EB3-DCFA22D99EE1}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\productimagefilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\productimagefile\\updateproductimage\\updateproductimagecommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\productimagefile\\updateproductimage\\updateproductimagecommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\productimagefile\\updateproductimage\\updateproductimagecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\productimagefile\\updateproductimage\\updateproductimagecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samun\\desktop\\mini-eticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\productimagefile\\updateproductimage\\updateproductimagecommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5EC01A-CCC4-49FD-9140-60387D260B76}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\productimagefile\\updateproductimage\\updateproductimagecommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 970,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 960,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\ServiceRegistration.cs*",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\ServiceRegistration.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:21:30.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyReference.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\AssemblyReference.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\AssemblyReference.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\AssemblyReference.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\AssemblyReference.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:22:01.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:18:33.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.ProductImageFile [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DELL/ETicaretDb/True/SqlTable/dbo.ProductImageFile.sql",
+              "ToolTip": "dbo.ProductImageFile [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-14T13:13:05.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductImageFileController.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\ProductImageFileController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Controllers\\ProductImageFileController.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\ProductImageFileController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\ProductImageFileController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAC0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:11:20.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateProductImageCommandResponse.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandResponse.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandResponse.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandResponse.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:08:43.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateProductImageCommandRequest.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandRequest.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandRequest.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:08:27.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateProductImageCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandHandler.cs",
+              "ToolTip": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandHandler.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\ProductImageFile\\UpdateProductImage\\UpdateProductImageCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAArwB4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T13:08:07.85Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 970,
+          "DockedWidth": 960,
           "SelectedChildIndex": -1,
           "Children": [
             {

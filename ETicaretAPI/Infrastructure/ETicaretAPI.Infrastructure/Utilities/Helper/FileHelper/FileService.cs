@@ -28,37 +28,49 @@ namespace ETicaretAPI.Infrastructure.Utilities.Helper.FileHelper
         #endregion
 
         #region File Update
-        public string Update(IFormFile formFile, string filePath, string root)
+        public async Task<string> UpdateAsync(IFormFile formFile, string filePath, string root)
         {
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
             }
-            return Upload(formFile, root);
+
+            // formFile-i IFormFileCollection tipinə çevirmək
+            IFormFileCollection fileCollection = new FormFileCollection { formFile };
+
+            List<string> uploadedFiles = await UploadAsync(fileCollection, root);
+
+            return uploadedFiles.FirstOrDefault(); // tək fayl üçün
         }
+
         #endregion
 
         #region File Upload
-        public string Upload(IFormFile formFile, string root)
+        public async Task<List<string>> UploadAsync(IFormFileCollection files, string path)
         {
-            if (formFile.Length > 0)
-            {
-                if (!Directory.Exists(root))
-                {
-                    Directory.CreateDirectory(root);
-                }
-                string existsion = Path.GetExtension(formFile.FileName);
-                string guid = GuidHelper.GuidHelper.CreateGuid();
-                string filePath = guid + existsion;
+            List<string> uploadedFileNames = new();
 
-                using (FileStream fileStream = File.Create(Path.Combine(root, filePath)))
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            foreach (var formFile in files)
+            {
+                if (formFile.Length > 0)
                 {
-                    formFile.CopyTo(fileStream);
-                    fileStream.Flush();
-                    return filePath;
+                    string extension = Path.GetExtension(formFile.FileName);
+                    string guid = GuidHelper.GuidHelper.CreateGuid();
+                    string fileName = guid + extension;
+                    string fullPath = Path.Combine(path, fileName);
+
+                    using FileStream fileStream = File.Create(fullPath);
+                    await formFile.CopyToAsync(fileStream);
+                    await fileStream.FlushAsync();
+
+                    uploadedFileNames.Add(fileName);
                 }
             }
-            return null;
+
+            return uploadedFileNames;
         }
         #endregion
     }

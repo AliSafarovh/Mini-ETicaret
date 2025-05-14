@@ -10,7 +10,7 @@ namespace ETicaretAPI.Application.Features.Commands.ProductImageFile.UpdateProdu
     public class UploadProductImageCommandResponse
     {
 
-        public string Message { get => "Silindi"; }
+        public string Message { get => "fayl Yuklendi"; }
 
     }
 }

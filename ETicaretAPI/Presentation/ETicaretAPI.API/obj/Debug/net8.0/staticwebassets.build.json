@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qHEVWAlGe67ejtq5fBHtQFnTk2pubPD+4hW63nPtWlk=",
+  "Hash": "34ThUQ6ZumqnKIm2Gx99hVqKE+w+5XfEE7WqVcK4EwA=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-14.png",
+      "Identity": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg",
       "SourceId": "ETicaretAPI.API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
       "BasePath": "_content/ETicaretAPI.API",
-      "RelativePath": "resource/product-images/Ekran-Goruntusu-14#[.{fingerprint}]?.png",
+      "RelativePath": "resource/product-images/8c565ef5-9b8c-485d-8620-a9901ab1b670#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,32 +31,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e3ly0ca28x",
-      "Integrity": "tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk=",
+      "Fingerprint": "y6fgptwciw",
+      "Integrity": "FgJQ9ALIO+3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\Ekran-Goruntusu-14.png"
-    },
-    {
-      "Identity": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-15.png",
-      "SourceId": "ETicaretAPI.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretAPI.API",
-      "RelativePath": "resource/product-images/Ekran-Goruntusu-15#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "e3ly0ca28x",
-      "Integrity": "tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\Ekran-Goruntusu-15.png"
+      "OriginalItemSpec": "wwwroot\\resource\\product-images\\8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg"
     },
     {
       "Identity": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-4.png",
@@ -82,8 +61,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "resource/product-images/Ekran-Goruntusu-14.e3ly0ca28x.png",
-      "AssetFile": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-14.png",
+      "Route": "resource/product-images/8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg",
+      "AssetFile": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -92,64 +71,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "199309"
+          "Value": "102742"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk=\""
+          "Value": "\"FgJQ9ALIO+3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 10:30:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e3ly0ca28x"
-        },
-        {
-          "Name": "label",
-          "Value": "resource/product-images/Ekran-Goruntusu-14.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk="
-        }
-      ]
-    },
-    {
-      "Route": "resource/product-images/Ekran-Goruntusu-14.png",
-      "AssetFile": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-14.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "199309"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 10:30:30 GMT"
+          "Value": "Wed, 14 May 2025 11:42:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -159,13 +93,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk="
+          "Value": "sha256-FgJQ9ALIO+3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c="
         }
       ]
     },
     {
-      "Route": "resource/product-images/Ekran-Goruntusu-15.e3ly0ca28x.png",
-      "AssetFile": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-15.png",
+      "Route": "resource/product-images/8c565ef5-9b8c-485d-8620-a9901ab1b670.y6fgptwciw.jpg",
+      "AssetFile": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -174,19 +108,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "199309"
+          "Value": "102742"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk=\""
+          "Value": "\"FgJQ9ALIO+3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 10:50:57 GMT"
+          "Value": "Wed, 14 May 2025 11:42:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,52 +130,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e3ly0ca28x"
+          "Value": "y6fgptwciw"
         },
         {
           "Name": "label",
-          "Value": "resource/product-images/Ekran-Goruntusu-15.png"
+          "Value": "resource/product-images/8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk="
-        }
-      ]
-    },
-    {
-      "Route": "resource/product-images/Ekran-Goruntusu-15.png",
-      "AssetFile": "C:\\Users\\samun\\Desktop\\Mini-ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Ekran-Goruntusu-15.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "199309"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 10:50:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-tpBIKSjgLlmLQOF+TIYjRFSbZZncOlKeWVWfYsIz5Wk="
+          "Value": "sha256-FgJQ9ALIO+3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c="
         }
       ]
     },

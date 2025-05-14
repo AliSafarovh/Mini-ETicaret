@@ -1,1 +1,3 @@
-C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\cats.jpg
+C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\8e8befa9-1764-44ff-82c4-435f44236c6e.jpg
+C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\Ekran-Goruntusu-14.png
+C:\Users\samun\Desktop\Mini-ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\Ekran-Goruntusu-15.png

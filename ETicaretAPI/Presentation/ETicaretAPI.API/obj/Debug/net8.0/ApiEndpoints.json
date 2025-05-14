@@ -1,5 +1,94 @@
 [
   {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductImageFileController",
+    "Method": "DeleteImage",
+    "RelativePath": "api/ProductImageFile/DeleteImage",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductImageFileController",
+    "Method": "GetAllProductImages",
+    "RelativePath": "api/ProductImageFile/GetAllProductImages/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ETicaretAPI.Application.Features.Queries.ProductImageFile.GetProductImage.GetProductImagesQueryRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "productId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductImageFileController",
+    "Method": "UpdateImage",
+    "RelativePath": "api/ProductImageFile/update-image",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FormFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductImageFileController",
+    "Method": "Upload",
+    "RelativePath": "api/ProductImageFile/Upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Files",
+        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
     "Method": "Get",
     "RelativePath": "api/Products",
@@ -80,69 +169,6 @@
         "Name": "Id",
         "Type": "System.String",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
-    "Method": "DeleteImage",
-    "RelativePath": "api/Products/DeleteImage",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ProductId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
-    "Method": "GetAllProductImages",
-    "RelativePath": "api/Products/GetAllProductImages/{productId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ETicaretAPI.Application.Features.Queries.ProductImageFile.GetProductImage.GetProductImagesQueryRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "productId",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
-    "Method": "Upload",
-    "RelativePath": "api/Products/Upload",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Files",
-        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
