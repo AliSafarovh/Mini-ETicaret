@@ -83,7 +83,7 @@
         }
       }
     },
-    "/api/ProductImageFile/GetAllProductImages/{productId}": {
+    "/api/ProductImageFile/get-images-by-productId/{productId}": {
       "get": {
         "tags": [
           "ProductImageFile"
@@ -98,25 +98,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GetProductImagesQueryRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GetProductImagesQueryRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/GetProductImagesQueryRequest"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -315,16 +296,6 @@
           "stock": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "GetProductImagesQueryRequest": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

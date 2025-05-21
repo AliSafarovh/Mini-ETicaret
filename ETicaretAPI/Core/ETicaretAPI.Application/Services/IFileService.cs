@@ -10,8 +10,8 @@ namespace ETicaretAPI.Application.Services
     public  interface IFileService
     {
         Task<List<string>> UploadAsync(IFormFileCollection files, string path);
-        void Delete(string filePath);
-        Task<string> UpdateAsync(IFormFile formFile, string filePath, string root);
-
+        bool Delete(string filePath);
+        //Task<string> UpdateAsync(IFormFile formFile, string filePath, string root);
+        Task<List<string>> GetFileByProductIdAsync(string productId);
     }
 }

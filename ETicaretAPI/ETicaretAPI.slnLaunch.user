@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Yeni Profil",
+    "Projects": [
+      {
+        "Path": "Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WebUI\\Saat\\AdminPanel.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

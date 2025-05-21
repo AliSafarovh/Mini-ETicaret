@@ -1,5 +1,29 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/resource/product-images/2ca4953d-082f-4c28-9c15-49c46dbf42ba.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resource\product-images\2ca4953d-082f-4c28-9c15-49c46dbf42ba.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"102742"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 11:38:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/resource/product-images/2ca4953d-082f-4c28-9c15-49c46dbf42ba.y6fgptwciw.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resource\product-images\2ca4953d-082f-4c28-9c15-49c46dbf42ba.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y6fgptwciw"},{"Name":"integrity","Value":"sha256-FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c="},{"Name":"label","Value":"_content/ETicaretAPI.API/resource/product-images/2ca4953d-082f-4c28-9c15-49c46dbf42ba.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"102742"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 11:38:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/resource/product-images/56156a7c-1537-433b-9dfa-9da7a7442756.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resource\product-images\56156a7c-1537-433b-9dfa-9da7a7442756.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"102742"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 11:38:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/resource/product-images/56156a7c-1537-433b-9dfa-9da7a7442756.y6fgptwciw.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resource\product-images\56156a7c-1537-433b-9dfa-9da7a7442756.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y6fgptwciw"},{"Name":"integrity","Value":"sha256-FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c="},{"Name":"label","Value":"_content/ETicaretAPI.API/resource/product-images/56156a7c-1537-433b-9dfa-9da7a7442756.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"102742"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022FgJQ9ALIO\u002B3J1F9nl/yUIDUxB9Y0ihOZYv9E4TSQT7c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 11:38:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/resource/product-images/8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resource\product-images\8c565ef5-9b8c-485d-8620-a9901ab1b670.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

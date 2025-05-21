@@ -22,20 +22,15 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductImageFileController",
-    "Method": "GetAllProductImages",
-    "RelativePath": "api/ProductImageFile/GetAllProductImages/{productId}",
+    "Method": "GetImagesByProductId",
+    "RelativePath": "api/ProductImageFile/get-images-by-productId/{productId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "ETicaretAPI.Application.Features.Queries.ProductImageFile.GetProductImage.GetProductImagesQueryRequest",
-        "IsRequired": true
-      },
-      {
         "Name": "productId",
-        "Type": "",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

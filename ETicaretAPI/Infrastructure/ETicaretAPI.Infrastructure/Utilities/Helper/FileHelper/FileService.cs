@@ -14,16 +14,34 @@ namespace ETicaretAPI.Infrastructure.Utilities.Helper.FileHelper
     public class FileServiceHelper : IFileService
     {
         #region FileDelete
-        public void Delete(string filePath)
+        public bool Delete(string filePath)
         {
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
+                return true; // Fayl uğurla silindi
             }
-            else
+
+            return false; // Fayl tapılmadı
+        }
+
+
+        #endregion
+
+        #region GetImageByProductID
+        public async Task<List<string>> GetFileByProductIdAsync(string productId)
+        {
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "products", productId);
+
+            if (!Directory.Exists(path))
             {
-                Console.WriteLine("Yanlış bir yol yazdınız");
+                return new List<string>(); // Yəni: Fayl yoxdur → boş siyahı döndər
             }
+
+            var files = Directory.GetFiles(path);
+            var fileNames = files.Select(file => Path.GetFileName(file)).ToList();
+
+            return await Task.FromResult(fileNames);
         }
         #endregion
 

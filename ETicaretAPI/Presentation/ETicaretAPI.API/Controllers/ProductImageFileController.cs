@@ -31,16 +31,21 @@ namespace ETicaretAPI.API.Controllers
             UploadProductImageCommandResponse response = await _mediator.Send(request);
             return Ok(response);
         }
+
         [HttpDelete("[action]")]
         public async Task<IActionResult> DeleteImage([FromForm] RemoveProductImageCommandRequest request)
         {
             RemoveProductImageCommandResponse response = await _mediator.Send(request);
             return Ok(response);
         }
-        [HttpGet("[action]/{productId}")]
-        public async Task<IActionResult> GetAllProductImages(GetProductImagesQueryRequest request)
+        [HttpGet("get-images-by-productId/{productId}")]
+        public async Task<IActionResult> GetImagesByProductId(string productId)
         {
-            GetProductImagesQueryResponse response = await _mediator.Send(request);
+            var response = await _mediator.Send(new GetImagesByProductIdQueryRequest
+            {
+                ProductId = productId
+            });
+
             return Ok(response);
         }
         [HttpPut("update-image")]
